@@ -1,0 +1,15 @@
+{
+  "name": "DatabootcampDemoApi",
+  "version": "0.0.1",
+  "description": "Demo api for use with the databootcamp during SpaceApps Mikkeli event",
+  "main": "app.js",
+  "author": {
+    "name": "Belvain",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "body-parser": "*"
+  }
+}
