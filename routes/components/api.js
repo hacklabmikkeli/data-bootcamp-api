@@ -4,22 +4,31 @@ exports.index = function(req, res) {
   var desc = {
     version : '0.0.1',
     description : 'Api for using in practices during databootcamp',
-    functions : [ {
-      url : '/list',
-      type : 'GET',
-      description : 'Returns a list with name and id for each charater',
-      format : 'json'
-    }, {
-      url : '/character/:id',
-      type : 'GET',
-      description : 'Returns the info of single character',
-      format : 'json'
-    }, {
-      url : '/character/create',
-      type : 'POST',
-      description : 'Creates new character',
-      format : 'json'
-    } ]
+    functions : [
+        {
+          url : '/list',
+          params : [],
+          type : 'GET',
+          description : 'Returns a list with name and id for each charater',
+          format : 'json'
+        },
+        {
+          url : '/character/:id',
+          params : [],
+          type : 'GET',
+          description : 'Returns the info of single character',
+          format : 'json'
+        },
+        {
+          url : '/character/create',
+          params : [ {
+            type : 'body',
+            values : "name: String, portrait: String, bio: String, parents: [String], siblings: [String], closeFriends: [String], children: [String], marriage: [String], lovers:  [String],liege: [String]"
+          } ],
+          type : 'POST',
+          description : 'Creates new character',
+          format : 'json'
+        } ]
   };
   res.send(desc);
 };
