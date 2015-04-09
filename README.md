@@ -66,4 +66,17 @@ $.post('http://api.hack4mikkeli.fi/character/create', character, function(res){
 });
 ```
 Response will be similar as requesting specific character with an "_id" as shown earlier.
+Api supports following properties with following types:
+
+name: String,
+portrait: String,
+bio: String,
+parents: [String],
+siblings: [String],
+closeFriends: [String],
+children: [String],
+marriage: [String],
+lovers: [String],
+liege: [String],
+
 
