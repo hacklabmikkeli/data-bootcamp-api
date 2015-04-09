@@ -32,7 +32,7 @@ Path **/character/:id** will give out more information about the character whose
 For example if we wanted to get more information about "Jon Snow" we would make GET request to **/character/552652022ee009e65fc86179** like shown below.
 
 ```javascript
-    $.getJSON('http://api.hack4mikkeli.fi//character/552652022ee009e65fc86179', function(jon){
+    $.getJSON('http://api.hack4mikkeli.fi/character/552652022ee009e65fc86179', function(jon){
       console.log(jon.name);
       //Do something with more specific data
     });
