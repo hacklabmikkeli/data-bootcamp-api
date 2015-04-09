@@ -9,7 +9,7 @@ mongoose.connect(db.getConnectUrl());
 
 var app = express();
 
-app.set('port', 3000);
+app.set('port', 9030);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
