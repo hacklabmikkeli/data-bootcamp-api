@@ -57,9 +57,10 @@ exports.create = function(req, res) {
   var marriage = req.body.marriage;
   var lovers = req.body.lovers;
   var liege = req.body.liege;
+  var kingdom = req.body.kingdom;
 
   characterDAO.create(name, portrait, bio, parents, siblings, closeFriends,
-      children, marriage, lovers, liege, function(character) {
+      children, marriage, lovers, liege, kingdom, function(character) {
         res.send(character);
       });
 };

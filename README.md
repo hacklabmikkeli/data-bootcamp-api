@@ -78,5 +78,6 @@ children: [String],
 marriage: [String],
 lovers: [String],
 liege: [String],
+kingdom: [String]
 ```
 

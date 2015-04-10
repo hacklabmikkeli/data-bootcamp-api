@@ -11,6 +11,7 @@ var Character = mongoose.model('Character', {
   marriage: [String],
   lovers:  [String],
   liege: [String],
+  kingdom: [String],
 });
 
 module.exports = Character;

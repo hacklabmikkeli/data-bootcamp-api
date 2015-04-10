@@ -1,7 +1,7 @@
 ﻿var Character = require('../model/character')
 
 exports.create = function(name, portrait, bio, parents, siblings, closeFriends,
-    children, marriage, lovers, liege, callback) {
+    children, marriage, lovers, liege, kingdom, callback) {
   var character = new Character({
     'name' : name,
     'portrait' : portrait,
@@ -12,7 +12,8 @@ exports.create = function(name, portrait, bio, parents, siblings, closeFriends,
     'children' : children,
     'marriage' : marriage,
     'lovers' : lovers,
-    'liege' : liege
+    'liege' : liege,
+    'kingdom' : kingdom
   });
   character.save(function(err, character) {
     if (err)
